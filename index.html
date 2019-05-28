@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+    }
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: linear-gradient(to bottom right,rgba(80,167,194,.9),rgba(144,243,199,.9));
+    }
+    .header__logo {
+      position: relative;
+      width: 128px;
+      height: 135px;
+      margin: 0 0 32px;
+    }
+    .header__logo svg {
+      max-width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-transition: -webkit-transform 0.1s;
+      transition: transform 0.1s;
+      transition: transform 0.1s, -webkit-transform 0.1s;
+      will-change: transform;
+    }
+    .header__logo svg.logo-dark path {
+      fill: #50a7c2;
+      opacity: 0.6;
+    }
+    .header__logo svg.logo-light path {
+      fill: #90f3c7;
+      opacity: 0.5;
+    }
+  </style>
+  <body>
+    <header>
+      <div class="header__logo">
+        <svg
+          class="logo-dark"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 296 321"
+        >
+          <path
+            d="M24 29.27L232 .22c13.255-1.85 24 7.38 24 20.623V228.62c0 13.24-10.745 25.475-24 27.326L24 285c-13.255 1.85-24-7.382-24-20.623V56.6c0-13.245 10.745-25.48 24-27.33z"
+            fill="#fff"
+            fill-rule="evenodd"
+          ></path>
+        </svg>
+        <svg
+          class="logo-light"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 296 321"
+        >
+          <path
+            d="M64 65.037l208-29.05c13.255-1.85 24 7.382 24 20.623v207.78c0 13.24-10.745 25.474-24 27.326L64 320.765c-13.255 1.85-24-7.382-24-20.622V92.363c0-13.24 10.745-25.475 24-27.326z"
+            fill="#fff"
+            fill-rule="evenodd"
+          ></path>
+        </svg>
+      </div>
+    </header>
+    <!-- <script src="./index.js"></script> -->
+    <script src="./main.js"></script>
+  </body>
+</html>
